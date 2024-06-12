@@ -1,0 +1,7 @@
+const [headercontent , setheadercontent] = useState();
+useEffect (()=>{
+if(localStorage.getItem('token')!= undefined )
+setheadercontent('admin');
+else
+setheadercontent('visitor');
+});
